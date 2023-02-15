@@ -1,6 +1,13 @@
 # Script to download, Silent Install and then clean up once installed Microsoft Excel for Mac
 # Writen by https://github.com/LukeSprayUK
 
+
+#if [ -d /Applications/Microsoft\ Excel.app/ ];
+then
+  echo "Already Installed"
+  exit 0
+else
+
 #Make temp folder for downloads.
 mkdir "/tmp/office/";
 cd "/tmp/office/";
